@@ -1,0 +1,23 @@
+{
+  "name": "JavascriptAlgorithms",
+  "version": "1.0.0",
+  "description": "A small selection of some essential algorithms in Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JochenFromm/JavascriptAlgorithms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JochenFromm/JavascriptAlgorithms/issues"
+  },
+  "homepage": "https://github.com/JochenFromm/JavascriptAlgorithms#readme",
+  "devDependencies": {
+    "jasmine": "^3.0.0"
+  }
+}
