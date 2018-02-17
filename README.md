@@ -11,6 +11,11 @@ Run "npm test"
 
 # Algorithms
 
+Combinatorial optimization
+
+* [Backtracking](algorithms/backtracking.js)
+  https://en.wikipedia.org/wiki/Backtracking
+
 Classic
 
 * [MapReduce](algorithms/map_reduce.js)
