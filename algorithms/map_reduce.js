@@ -1,13 +1,21 @@
-const _ = require('lodash');
+
+function pickBy(object, filter_func) {
+    return Object.assign(
+        ...Object
+            .entries(object)
+            .filter(([, v]) => filter_func(v))
+            .map(([k, v]) => ({ [k]: v }))
+    );
+}
 
 function letterFrequency(text, min = 3) {
   const results = countItems(text, 'letters');
-  return _.pickBy(results, function (value) { return value > min } );
+  return pickBy(results, function (value) { return value > min } );
 }
 
 function wordFrequency(text, min = 3) {
   let results = countItems(text, 'words');
-  return _.pickBy(results, function (value) { return value > min } );
+  return pickBy(results, function (value) { return value > min } );
 }
 
 function countItems(text, item) {
@@ -34,4 +42,4 @@ var mapReduce = (function (){
   };
 })();
 
-module.exports = mapReduce;
+export { mapReduce };

@@ -23,4 +23,4 @@ var Backtracking = (function (){
   };
 })();
 
-module.exports = Backtracking;
+export { Backtracking };

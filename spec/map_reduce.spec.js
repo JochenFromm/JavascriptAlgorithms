@@ -1,7 +1,6 @@
+import { mapReduce } from "./../algorithms/map_reduce.js";
 
 describe("MapReduce", function() {
-  const mapReduce = require('./../algorithms/map_reduce.js');
-
   describe("operations", function() {
     const text = 'And so even though we face the difficulties of today '+
                  'and tomorrow, I still have a dream. It is a dream '+

@@ -10,7 +10,7 @@ export default [
     files: ["**/*.js"],
     ignores: ["**/node-modules/", ".git/", ".github/"],
     languageOptions: {
-    	sourceType: "commonjs",
+    	sourceType: "module",
     	globals: { ...globals.browser, ...globals.jest }
     }
   }

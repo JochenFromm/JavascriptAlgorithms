@@ -1,0 +1,43 @@
+<html>
+<head>
+  <!-- If you want to download this demo and run them locally, 
+       you'll need to run them through a local web server like Apache or Nginx -->
+  <script type="module">
+    import { Backtracking } from "./algorithms/backtracking.js";
+    import { mapReduce } from "./algorithms/map_reduce.js";
+
+    window.onBacktrackingClick = function onClick() {
+      const result = [];
+      const callback = (text) => { result.push(text) };
+      const value = document.getElementById("input1").value;
+      Backtracking.permutations(value, callback);
+      const text = result.join(', ')
+      document.getElementById("result1").textContent= text;
+    }
+
+    window.onMapReduceClick = function onClick() {
+      const value = document.getElementById("text1").value.replace('\n','')
+      const letters = mapReduce.letterFrequency(value, 0);
+      const words = mapReduce.wordFrequency(value, 0);
+      document.getElementById("result2").textContent = "Letters "+JSON.stringify(letters, null, 2);
+      document.getElementById("result3").textContent = "Words "+JSON.stringify(words, null, 3);
+    }
+  </script>
+</head>
+
+<body>
+  <h3> Backtracking </h3>
+  <input id="input1" value="abc" />
+  <button onclick='onBacktrackingClick()'>Backtracking</button> 
+  <div id="result1"> </div>
+
+  <h3> Map-Reduce </h3>
+  <textarea id="text1" cols="80" rows="4">And so even though we face the difficulties of today and tomorrow, I still have a dream. It is a dream deeply rooted in the American dream.
+  </textarea>
+  <button onclick='onMapReduceClick()'>Map Reduce</button> 
+  <div id="result2"></div>
+  <div id="result3"></div>
+</body>
+</html>
+
+
