@@ -1,13 +1,13 @@
 
 # Essential Javascript Algorithms
 
-[![Build Status](https://travis-ci.org/JochenFromm/JavascriptAlgorithms.svg)](https://travis-ci.org/JochenFromm/JavascriptAlgorithms)
+A small selection of essential algorithms in Javascript
 
-A small selection of some essential algorithms in Javascript
+# Linters & Tests
 
-# Tests
+Run " npx eslint" to execute the linter
 
-Run "npm test"
+Run "npm test" to start the tests
 
 # Algorithms
 
