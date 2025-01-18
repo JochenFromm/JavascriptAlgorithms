@@ -1,7 +1,7 @@
 
 # Essential Javascript Algorithms
 
-A small selection of essential algorithms in Javascript.
+A small selection of essential algorithms in Javascript. Abelson and Sussman's SICP book says "a procedure is a pattern for the local evolution of a computational process". Find some essential procedures and patterns below.
 
 See also:
 
@@ -18,6 +18,9 @@ Sedgewick book - Algorithms 4th edition, by Robert Sedgewick and Kevin Wayne
 
 CLRS book - "Introduction to Algorithms" by Cormen, Leiserson, Rivest and Stein
 * https://en.wikipedia.org/wiki/Introduction_to_Algorithms
+
+SICP book - "Structure and Interpretation of Computer Programs" from Abelson and Sussman
+* https://en.wikipedia.org/wiki/Structure_and_Interpretation_of_Computer_Programs
 
 TAOCP book - "The Art of Computer Programming" from Donald Knuth
 * https://en.wikipedia.org/wiki/The_Art_of_Computer_Programming
