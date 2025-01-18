@@ -1,4 +1,3 @@
-
 // Quickhull convex hull algorithm based on 
 // https://en.wikipedia.org/wiki/Quickhull
 // https://literateprograms.org/quickhull__javascript_.html

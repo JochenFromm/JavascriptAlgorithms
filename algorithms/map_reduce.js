@@ -1,3 +1,7 @@
+// Classic MapReduce algorithm for text analysis which
+// uses the map and reduce functions from Javascript
+// to count letters and words :-)
+// https://en.wikipedia.org/wiki/MapReduce
 
 function pickBy(object, filter_func) {
     return Object.assign(
