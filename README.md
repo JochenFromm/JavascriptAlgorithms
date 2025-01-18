@@ -16,8 +16,12 @@ Combinatorial optimization
 * [Backtracking](algorithms/backtracking.js)
   https://en.wikipedia.org/wiki/Backtracking
 
-Classic
+Classic algorithms
 
 * [MapReduce](algorithms/map_reduce.js)
   https://en.wikipedia.org/wiki/MapReduce
 
+Geometric algorithms
+
+* [Convex Hull](algorithms/convex_hull.js)
+  https://en.wikipedia.org/wiki/Quickhull

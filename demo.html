@@ -5,8 +5,9 @@
   <script type="module">
     import { Backtracking } from "./algorithms/backtracking.js";
     import { mapReduce } from "./algorithms/map_reduce.js";
+    import { ConvexHull } from "./algorithms/convex_hull.js";
 
-    window.onBacktrackingClick = function onClick() {
+    window.onBacktrackingClick = function () {
       const result = [];
       const callback = (text) => { result.push(text) };
       const value = document.getElementById("input1").value;
@@ -15,14 +16,23 @@
       document.getElementById("result1").textContent= text;
     }
 
-    window.onMapReduceClick = function onClick() {
+    window.onMapReduceClick = function () {
       const value = document.getElementById("text1").value.replace('\n','')
       const letters = mapReduce.letterFrequency(value, 0);
       const words = mapReduce.wordFrequency(value, 0);
       document.getElementById("result2").textContent = "Letters "+JSON.stringify(letters, null, 2);
       document.getElementById("result3").textContent = "Words "+JSON.stringify(words, null, 3);
     }
+
+    window.onConvexHullClick = function () {
+      var hull = ConvexHull.getConvexHull(pts);
+      for (var line in hull) {
+          var baseLine = hull[line];
+          plotBaseLine(baseLine, 'rgb(255,0,0)');
+      }
+    }
   </script>
+  <script language="javascript" src="./helper.js"></script>
 </head>
 
 <body>
@@ -37,6 +47,11 @@
   <button onclick='onMapReduceClick()'>Map Reduce</button> 
   <div id="result2"></div>
   <div id="result3"></div>
+
+  <h3> Convex Hull (Quickhull) </h3>
+  <canvas id="convex_hull_demo" width=200 height=200 style='margin-right:5px; border:solid 1px #888;'></canvas>
+  <button onclick='plotPoints(200)'>Get Random Points</button>
+  <button onclick='onConvexHullClick()'>Get convex hull</button><br>
 </body>
 </html>
 
