@@ -5,7 +5,7 @@ A small selection of essential algorithms in Javascript
 
 # Linters & Tests
 
-Run " npx eslint" to execute the linter
+Run "npx eslint" to execute the linter
 
 Run "npm test" to start the tests
 
